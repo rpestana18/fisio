@@ -1,0 +1,29 @@
+name: fisioterapia
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  awesome_dialog: ^3.2.1
+  flutter:
+    sdk: flutter
+  get: ^4.6.6
+  mask_text_input_formatter: ^2.9.0
+  sqflite: ^2.3.3+1
+  table_calendar: ^3.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - lib/images/
+    - lib/images/exercicios/videos/
+    - lib/images/exercicios/fotos/
