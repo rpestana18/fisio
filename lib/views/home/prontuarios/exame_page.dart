@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../src/controllers/pacientes_controller.dart';
+import '../exercicios/exercicios_view.dart';
 
 class ExamePage extends StatelessWidget {
   ExamePage({super.key});
@@ -116,7 +117,7 @@ class ExamePage extends StatelessWidget {
                                         CrossAxisAlignment.start,
                                     children: [
                                       const Text(
-                                        'Caiu nos últimos 12 meses',
+                                        'Caiu nos últimos 12 meses, se sente instável ao ficar em pé e preocupa-se com quedas?',
                                         style: TextStyle(
                                           fontSize: 14,
                                         ),
@@ -143,7 +144,7 @@ class ExamePage extends StatelessWidget {
                                         CrossAxisAlignment.start,
                                     children: [
                                       const Text(
-                                        'Você se sente instável quando em pé ou andando?',
+                                        'Há lesão. Tiveram duas ou mais quedas no último ano, é incapaz de se levantar ao deitar no chão e tem perda de consciência ou suspeita de síncope?',
                                         style: TextStyle(
                                           fontSize: 14,
                                         ),
@@ -172,7 +173,7 @@ class ExamePage extends StatelessWidget {
                                         CrossAxisAlignment.start,
                                     children: [
                                       const Text(
-                                        'Preocupa-se com quedas?',
+                                        'A marcha e o Equilíbrio estão prejudicados (TUG > que 15 segundos OU a Velocidade da Marcha está abaixo de 0.9m/s?',
                                         style: TextStyle(
                                           fontSize: 14,
                                         ),
@@ -192,51 +193,6 @@ class ExamePage extends StatelessWidget {
                                         ),
                                       ),
                                     ],
-                                  ),
-                                  const SizedBox(
-                                    height: 12,
-                                  ),
-                                  const Center(
-                                    child: Text(
-                                      'Testes',
-                                      style: TextStyle(
-                                        fontSize: 15,
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                    ),
-                                  ),
-                                  const SizedBox(
-                                    height: 12,
-                                  ),
-                                  TextField(
-                                    controller:
-                                        pacienteController.velocidadeController,
-                                    minLines: 1,
-                                    maxLines: 1,
-                                    decoration: const InputDecoration(
-                                      label: Text(
-                                        'Velocidade de marcha',
-                                      ),
-                                      border: OutlineInputBorder(),
-                                    ),
-                                  ),
-                                  const SizedBox(
-                                    height: 12,
-                                  ),
-                                  TextField(
-                                    controller:
-                                        pacienteController.velocidadeController,
-                                    minLines: 1,
-                                    maxLines: 1,
-                                    decoration: const InputDecoration(
-                                      label: Text(
-                                        'Time Up and Go',
-                                      ),
-                                      border: OutlineInputBorder(),
-
-                                      /// Reativar
-                                      suffixIcon: Icon(Icons.image),
-                                    ),
                                   ),
                                   const SizedBox(
                                     height: 12,
@@ -408,9 +364,9 @@ class ExamePage extends StatelessWidget {
                           ),
                         ),
                         onPressed: () {
-                          // Get.to(
-                          //       () => const Exercicios(),
-                          // );
+                           Get.to(
+                                 () => const ExerciciosView(),
+                           );
                         },
                         child: const Text(
                           'Consulte os exercícios',

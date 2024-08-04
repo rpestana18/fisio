@@ -55,7 +55,7 @@ Prevenção Primária
 Reavaliar em 1 ano.
 
 Educar sobre prevenções de quedas e exercícios''';
-    } else if (!preocupa.value) {
+    } else if (caiu.value && !preocupa.value) {
       respostaController.text = '''Risco Intermediário
 Prevenção Secundária
 

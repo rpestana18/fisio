@@ -7,6 +7,7 @@ import 'package:table_calendar/table_calendar.dart';
 import 'auth/auth_view.dart';
 import 'home/avaliacao/avaliacao_view.dart';
 import 'home/exercicios/exercicios_view.dart';
+import 'home/prontuarios/estratificacao_view.dart';
 import 'home/prontuarios/prontuarios_view.dart';
 
 class HomeView extends StatefulWidget {
@@ -25,7 +26,7 @@ class _HomeViewState extends State<HomeView> {
           0xFF000857,
         ),
         title: const Text(
-          'Bem vindo, João Victor!',
+          'Bem-vinda, Aline!',
         ),
       ),
       body: SafeArea(
@@ -72,11 +73,11 @@ class _HomeViewState extends State<HomeView> {
                                     ),
                                     onPressed: () {
                                       Get.to(
-                                        () => const AvaliacaoView(),
+                                        () => const EstratificacaoView(),
                                       );
                                     },
                                     child: const Text(
-                                      'Avaliação fisioterapêutica',
+                                      'Avaliação de Estratificação',
                                       style: TextStyle(
                                         fontSize: 18,
                                       ),
