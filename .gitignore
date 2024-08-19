@@ -4,6 +4,7 @@
 .idea
 .dart_tool
 .flutter-plugins
+.flutter-plugins-dependencies
 /build
 /android
 /ios
