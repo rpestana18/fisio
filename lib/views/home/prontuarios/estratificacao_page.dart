@@ -92,7 +92,7 @@ class EstratificacaoPage extends StatelessWidget {
                                     CrossAxisAlignment.start,
                                     children: [
                                       const Text(
-                                        'Há lesão. Tiveram duas ou mais quedas no último ano, é incapaz de se levantar ao deitar no chão e tem perda de consciência ou suspeita de síncope?',
+                                        'Há lesão? Tiveram duas ou mais quedas no último ano, é incapaz de se levantar ao deitar no chão e tem perda de consciência ou suspeita de síncope?',
                                         style: TextStyle(
                                           fontSize: 14,
                                         ),
@@ -121,7 +121,7 @@ class EstratificacaoPage extends StatelessWidget {
                                     CrossAxisAlignment.start,
                                     children: [
                                       const Text(
-                                        'A marcha e o Equilíbrio estão prejudicados (TUG > que 15 segundos OU a Velocidade da Marcha está abaixo de 0.9m/s?',
+                                        'A marcha e o Equilíbrio estão prejudicados (TUG > que 15 segundos) OU a Velocidade da Marcha está abaixo de 0.9m/s?',
                                         style: TextStyle(
                                           fontSize: 14,
                                         ),

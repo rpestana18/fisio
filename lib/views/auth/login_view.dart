@@ -22,7 +22,7 @@ class LoginView extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text(
-                  'login: admin@admin.com\nsenha: admin123',
+                  'login: aline\naline',
                   textAlign: TextAlign.center,
                   style:
                       TextStyle(color: Colors.red, fontWeight: FontWeight.w500),

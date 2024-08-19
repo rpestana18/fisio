@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import '../../../src/controllers/exercicios_controller.dart';
 import '../../../src/models/exercicio_model.dart';
 
+
 class ExerciciosView extends StatelessWidget {
   const ExerciciosView({super.key});
 

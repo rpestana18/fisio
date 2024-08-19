@@ -1,9 +1,8 @@
-import 'package:fisioterapia/src/models/teste_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../src/controllers/testes_controller.dart';
-import '../../../src/models/teste_model.dart';
+import 'package:fisioterapia/src/models/teste_model.dart';
 
 class TestesView extends StatelessWidget {
   const TestesView({super.key});
@@ -79,16 +78,16 @@ class _TestesState extends State<Testes> {
   }
 
   Widget buildTestCard(
-      BuildContext context, TestesModel teste, int index) {
+      BuildContext context, TesteModel testeModel, int index) {
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(12.0),
         child: Row(
           children: [
-            Expanded(flex: 4, child: Text(teste.titulo)),
+            Expanded(flex: 4, child: Text(testeModel.titulo)),
             Expanded(
                 flex: 3,
-                child: Text(teste.indicacao, textAlign: TextAlign.center)),
+                child: Text(testeModel.indicacao, textAlign: TextAlign.center)),
             Expanded(
               flex: 2,
               child: Row(
@@ -96,7 +95,7 @@ class _TestesState extends State<Testes> {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      Get.to(() => DetalhesPage(teste: teste));
+                      Get.to(() => DetalhesPage(teste: testeModel));
                     },
                     child: const Icon(Icons.info_outline),
                   ),
@@ -111,7 +110,7 @@ class _TestesState extends State<Testes> {
 }
 
 class DetalhesPage extends StatefulWidget {
-  final TestesModel teste;
+  final TesteModel teste;
 
   const DetalhesPage({super.key, required this.teste});
 

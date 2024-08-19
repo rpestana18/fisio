@@ -29,7 +29,7 @@ class _HomeViewState extends State<HomeView> {
           'Bem-vinda, Aline!',
         ),
       ),
-      body: SafeArea(
+      body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(
             12.0,

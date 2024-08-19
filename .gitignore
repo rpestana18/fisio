@@ -1,0 +1,9 @@
+*.iml
+*.log
+*.lock
+.idea
+.dart_tool
+.flutter-plugins
+/build
+/android
+/ios

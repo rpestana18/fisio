@@ -38,9 +38,9 @@ class AuthController extends GetxController {
     String email = emailController.text.trim();
     String password = passwordController.text.trim();
 
-    String? emailError = validateEmail(email);
-    String? passwordError = validatePassword(password);
-
+    //String? emailError = validateEmail(email);
+    //String? passwordError = validatePassword(password);
+/*
     if (emailError != null || passwordError != null) {
       Get.snackbar(
         'Erro',
@@ -51,8 +51,8 @@ class AuthController extends GetxController {
       );
       return;
     }
-
-    if (email == 'admin@admin.com' && password == 'admin123') {
+*/
+    if (email == 'aline' && password == 'aline') {
       Get.snackbar(
         'Sucesso',
         'Logado com sucesso!',
