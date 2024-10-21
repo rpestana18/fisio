@@ -16,7 +16,7 @@ AP01-Aplicativo
   
 3. Armazenamento de prontuário eletrônico segundo a orientação do CREFITO e COFFITO.
 
-#Contexto
+# Contexto
 
 Um aplicativo mobile que permitirá que fisioterapeutas possam não somente registrar o tratamento dos seus paciente e a sua evolução, bem como fazer a Avaliação de Estratificação de forma automatizada, conforme o que determina o conselho de Fisioterapia, o COFFITO - Conselho Federal de Fisioterapia e Terapia Ocupacional.
 O aplicativo também tem fontes de consulta própria de imagens e vídeos dos exercícios e testes necessários para os diagnósticos.
